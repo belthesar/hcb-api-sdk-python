@@ -28,8 +28,6 @@ pip install hcb_api
 The HCB API does not require authentication, and only allows you to read public information from organizations with [Transparency Mode](https://changelog.hcb.hackclub.com/transparent-finances-(optional-feature)-151427) enabled.
 While the SDK does have support for an `access_token` parameter, it is not required to make requests to the API. In the event that the API requires authentication in the future, the SDK will be updated to support it.
 
-```py
-
 ## Services
 
 A list of all SDK services. Click on the service name to access its corresponding service methods.
