@@ -25,7 +25,6 @@ class Response:
 
 
 class DefaultHook:
-
     def before_request(self, request: Request, **kwargs):
         pass
 

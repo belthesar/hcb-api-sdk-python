@@ -9,7 +9,6 @@ from ..models.card import Card
 
 
 class CardsService(BaseService):
-
     @cast_models
     def list_an_organizations_cards(
         self,

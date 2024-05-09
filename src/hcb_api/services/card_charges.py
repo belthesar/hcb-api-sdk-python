@@ -9,7 +9,6 @@ from ..models.card_charge import CardCharge
 
 
 class CardChargesService(BaseService):
-
     @cast_models
     def list_an_organizations_card_charges(
         self,

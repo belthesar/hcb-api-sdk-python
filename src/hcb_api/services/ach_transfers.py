@@ -9,7 +9,6 @@ from ..models.ach_transfer import AchTransfer
 
 
 class AchTransfersService(BaseService):
-
     @cast_models
     def list_an_organizations_ach_transfers(
         self,

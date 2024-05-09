@@ -9,7 +9,6 @@ from ..models.invoice import Invoice
 
 
 class InvoicesService(BaseService):
-
     @cast_models
     def list_an_organizations_invoices(
         self,

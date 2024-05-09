@@ -9,7 +9,6 @@ from ..models.check import Check
 
 
 class ChecksService(BaseService):
-
     @cast_models
     def list_an_organizations_checks(
         self,

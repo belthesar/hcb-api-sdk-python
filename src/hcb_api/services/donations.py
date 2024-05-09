@@ -9,7 +9,6 @@ from ..models.donation import Donation
 
 
 class DonationsService(BaseService):
-
     @cast_models
     def list_an_organizations_donations(
         self,

@@ -9,7 +9,6 @@ from ..models.transfer import Transfer
 
 
 class TransfersService(BaseService):
-
     @cast_models
     def list_an_organizations_transfers(
         self,

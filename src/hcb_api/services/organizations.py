@@ -9,7 +9,6 @@ from ..models.organization import Organization
 
 
 class OrganizationsService(BaseService):
-
     @cast_models
     def get_a_single_organization(
         self, organization_id: str, expand: str = None

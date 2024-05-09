@@ -7,10 +7,17 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "hcb-api-sdk"
 version = "1.0.2"
+authors = [
+    { name="Cody Wilson", email="cody@codywilson.co" }
+]
 license = { text = "MIT" }
-description = """The HCB API is an unauthenticated REST API that allows you to read public information from organizations with <a href='https://changelog.hcb.hackclub.com/transparent-finances-(optional-feature)-151427'>Transparency Mode</a>                       enabled.                       <br><br><strong>Questions or suggestions?</strong>                       <br>Reach us in the #hcb channel on the <a href='https://hackclub.com/slack'>Hack Club Slack</a> or email <a href='mailto:hcb@hackclub.com'>hcb@hackclub.com</a>. <br><br>Happy hacking! ✨"""
+description = "Python SDK for the Hack Club Bank API"
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
     "requests>=2.31.0"
 ]
+
+[project.urls]
+Homepage = "https://github.com/belthesar/hcb-api-sdk-python"
+Issues = "https://github.com/belthesar/hcb-api-sdk-python/issues"

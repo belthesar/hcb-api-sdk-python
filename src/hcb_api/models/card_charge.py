@@ -5,6 +5,7 @@ import contextlib
 from __future__ import annotations
 from .utils.json_map import JsonMap
 from .base import BaseModel
+
 with contextlib.suppress(ImportError):
     from .transaction import Transaction
 from .organization import Organization

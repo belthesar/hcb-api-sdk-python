@@ -9,7 +9,6 @@ from ..models.transaction import Transaction
 
 
 class TransactionsService(BaseService):
-
     @cast_models
     def list_an_organizations_transactions(
         self,
