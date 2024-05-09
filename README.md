@@ -3,7 +3,7 @@
 A Python SDK for HCB_API.
 
 - API version: 3.0.0
-- SDK version: 1.0.1
+- SDK version: 1.0.2
 
 This Python SDK maintained by @belthesar. I am in no way affiliated with Hack Club or the HCB API. This SDK is not officially supported by Hack Club. Use at your own risk.
 

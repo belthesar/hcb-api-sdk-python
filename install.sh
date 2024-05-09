@@ -19,7 +19,7 @@ fi
 
 pip install build
 python -m build --outdir dist .
-pip install dist/hcb_api-1.0.1-py3-none-any.whl --force-reinstall
+pip install dist/hcb_api_sdk-1.0.2-py3-none-any.whl --force-reinstall
 
 if [ "$USE_VENV" -eq 1 ]; then
     deactivate

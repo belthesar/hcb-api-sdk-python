@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: hcb-api-sdk
-Version: 1.0.1
+Version: 1.0.2
 Summary: The HCB API is an unauthenticated REST API that allows you to read public information from organizations with <a href='https://changelog.hcb.hackclub.com/transparent-finances-(optional-feature)-151427'>Transparency Mode</a>                       enabled.                       <br><br><strong>Questions or suggestions?</strong>                       <br>Reach us in the #hcb channel on the <a href='https://hackclub.com/slack'>Hack Club Slack</a> or email <a href='mailto:hcb@hackclub.com'>hcb@hackclub.com</a>. <br><br>Happy hacking! ✨
 License: MIT
 Requires-Python: >=3.7
@@ -8,14 +8,18 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 Requires-Dist: requests>=2.31.0
 
-# HCB_API Python SDK 1.0.0
+# HCB_API Python SDK 1.0.1
 
 A Python SDK for HCB_API.
 
 - API version: 3.0.0
-- SDK version: 1.0.0
+- SDK version: 1.0.2
 
-The HCB API is an unauthenticated REST API that allows you to read public information from organizations with <a href='https://changelog.hcb.hackclub.com/transparent-finances-(optional-feature)-151427'>Transparency Mode</a> enabled. <br><br><strong>Questions or suggestions?</strong> <br>Reach us in the #hcb channel on the <a href='https://hackclub.com/slack'>Hack Club Slack</a> or email <a href='mailto:hcb@hackclub.com'>hcb@hackclub.com</a>. <br><br>Happy hacking! ✨
+This Python SDK maintained by @belthesar. I am in no way affiliated with Hack Club or the HCB API. This SDK is not officially supported by Hack Club. Use at your own risk.
+
+From the [HCB API documentation](https://hcb-api.hackclub.com/docs):
+
+> The HCB API is an unauthenticated REST API that allows you to read public information from organizations with <a href='https://changelog.hcb.hackclub.com/transparent-finances-(optional-feature)-151427'>Transparency Mode</a> enabled. <br><br><strong>Questions or suggestions?</strong> <br>Reach us in the #hcb channel on the <a href='https://hackclub.com/slack'>Hack Club Slack</a> or email <a href='mailto:hcb@hackclub.com'>hcb@hackclub.com</a>. <br><br>Happy hacking! ✨
 
 ## Table of Contents
 
@@ -31,23 +35,10 @@ pip install hcb_api
 
 ## Authentication
 
-### Access Token
-
-The HCB_API API uses a access token as a form of authentication.
-
-The access token can be set when initializing the SDK like this:
+The HCB API does not require authentication, and only allows you to read public information from organizations with [Transparency Mode](https://changelog.hcb.hackclub.com/transparent-finances-(optional-feature)-151427) enabled.
+While the SDK does have support for an `access_token` parameter, it is not required to make requests to the API. In the event that the API requires authentication in the future, the SDK will be updated to support it.
 
 ```py
-HCB_API(
-    access_token="YOUR_ACCESS_TOKEN"
-)
-```
-
-Or at a later stage:
-
-```py
-sdk.set_access_token("YOUR_ACCESS_TOKEN")
-```
 
 ## Services
 
