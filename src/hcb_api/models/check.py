@@ -4,8 +4,11 @@ from __future__ import annotations
 from enum import Enum
 from .utils.json_map import JsonMap
 from .base import BaseModel
-from .transaction import Transaction
-from .organization import Organization
+
+import contextlib
+with contextlib.suppress(ImportError):
+    from .transaction import Transaction
+    from .organization import Organization
 
 
 class CheckStatus(Enum):

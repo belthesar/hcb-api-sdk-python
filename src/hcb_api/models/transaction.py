@@ -5,14 +5,17 @@ from enum import Enum
 from typing import List
 from .utils.json_map import JsonMap
 from .base import BaseModel
-from .organization import Organization
-from .tag import Tag
-from .card_charge import CardCharge
-from .ach_transfer import AchTransfer
-from .check import Check
-from .donation import Donation
-from .invoice import Invoice
-from .transfer import Transfer
+
+import contextlib
+with contextlib.suppress(ImportError):
+    from .organization import Organization
+    from .tag import Tag
+    from .card_charge import CardCharge
+    from .ach_transfer import AchTransfer
+    from .check import Check
+    from .donation import Donation
+    from .invoice import Invoice
+    from .transfer import Transfer
 
 
 class TransactionType(Enum):

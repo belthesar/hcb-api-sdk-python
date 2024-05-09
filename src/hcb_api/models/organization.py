@@ -5,7 +5,10 @@ from enum import Enum
 from typing import List
 from .utils.json_map import JsonMap
 from .base import BaseModel
-from .user import User
+
+import contextlib
+with contextlib.suppress(ImportError):
+    from .user import User
 
 
 class Category(Enum):

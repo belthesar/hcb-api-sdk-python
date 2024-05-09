@@ -8,9 +8,9 @@ from .base import BaseModel
 import contextlib
 with contextlib.suppress(ImportError):
     from .transaction import Transaction
-from .organization import Organization
-from .card import Card
-from .user import User
+    from .organization import Organization
+    from .card import Card
+    from .user import User
 
 
 @JsonMap({"id_": "id", "date_": "date"})
