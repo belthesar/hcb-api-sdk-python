@@ -9,4 +9,4 @@ from enum import Enum
 class Environment(Enum):
     """The environments available for the SDK"""
 
-    DEFAULT = "//hcb.hackclub.com"
+    DEFAULT = "https://hcb.hackclub.com"
