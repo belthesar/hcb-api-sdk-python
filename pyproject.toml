@@ -7,11 +7,11 @@ name = "hcb-api-sdk"
 version = "1.0.5"
 description = "Python SDK to interact with Hack Club Bank"
 authors = [{ name = "Cody Wilson", email = "cody@codywilson.co" }]
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 readme = "README.md"
 license = "MIT"
 dependencies = [
-    "requests>=2.32.0",
+    "requests>=2.32.5",
 ]
 
 [dependency-groups]
