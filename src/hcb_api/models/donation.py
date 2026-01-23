@@ -19,13 +19,17 @@ class Donor(BaseModel):
     :type name: str, optional
     :param anonymous: anonymous, defaults to None
     :type anonymous: bool, optional
+    :param avatar: name, defaults to None
+    :type avatar: str, optional
     """
 
-    def __init__(self, name: str = None, anonymous: bool = None):
+    def __init__(self, name: str = None, anonymous: bool = None, avatar: str = None):
         if name is not None:
             self.name = name
         if anonymous is not None:
             self.anonymous = anonymous
+        if avatar is not None:
+          self.avatar = avatar
 
 
 class DonationStatus(Enum):
